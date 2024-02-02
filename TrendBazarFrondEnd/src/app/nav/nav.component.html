@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="" [routerLink]="['products']"><img src="../../assets/images/logo.png" alt="logo" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><button class="btn btn-warning" (click)="logout()">logout</button></li>
+            </ul>
+        </nav>
+        <a href=""  routerLink="carts"><img src="../../assets/images/cart.png" width="30px" height="30px">{{cartItemCount}}</a>
+        <img src="../../assets/images/menu.png" class="menu-icon" onclick="">
+    </div>
+</div>
